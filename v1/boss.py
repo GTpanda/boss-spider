@@ -119,11 +119,11 @@ while loop:
         # 牛人
         a = li.find('a')
         # 相关id
-        uid = a['data-uid']
-        suid = a['data-suid']
-        jid = a['data-jid']
-        lid = a['data-lid']
-        expectId = a['data-expect']
+        uid = a['data_list-uid']
+        suid = a['data_list-suid']
+        jid = a['data_list-jid']
+        lid = a['data_list-lid']
+        expectId = a['data_list-expect']
 
         # 个人基本信息区块1
         div1 = a.find('div', attrs={'class': 'info-labels'})
@@ -217,9 +217,9 @@ while loop:
             time.sleep(random.uniform(30,40))
        # if contactStatus == '继续沟通':
             # 向牛人发送简历申请
-            # requestResumeToJobSeeker(uid)
+            # request_resume_to_job_seeker(uid)
             # 接受牛人简历
-            # acceptResumeOfJobSeeker(uid)
+            # accept_resume_of_Job_seeker(uid)
             # time.sleep(random.uniform(30,40))
 
     page = page + 1
